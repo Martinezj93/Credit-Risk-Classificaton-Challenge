@@ -39,6 +39,8 @@ For the "Healthy Loan" class (0), both models exhibit exceptional performance. T
 
 For the "High-Risk Loan" class (1), the model trained on the original dataset achieves a precision of 0.87, recall of 1.00, and an F1-score of 0.93. The oversampled model also attains a recall of 1.00, indicating that all high-risk loans are correctly identified.
 
-Considering these findings, it appears that the model trained on the original dataset performs better in terms of precision for the high-risk loans, while both models exhibit excellent performance for healthy loans.
+Based on the results, both models perform exceptionally well in identifying healthy loans (class 0), achieving perfect precision, recall, and accuracy. However, when it comes to identifying high-risk loans (class 1), the model trained on a randomly oversampled dataset performs better with a recall of 1.00, indicating that all high-risk loans are correctly identified.
 
-The choice of the model to use depends on the specific problem and priorities. If the emphasis is on correctly identifying high-risk loans (class 1), the model trained on the original dataset could be preferred. On the other hand, if equal importance is placed on predicting both healthy (class 0) and high-risk loans, both models perform well, and either could be suitable.
+The choice of the model to use depends on the problem at hand and the relative importance of predicting the different classes. If the primary objective is to accurately identify high-risk loans (class 1), The second model (Randomly Oversampled) is recommended due to its higher recall (1.00). However, if equal importance is placed on predicting both healthy loans (class 0) and high-risk loans, both models exhibit strong performance and could be considered.
+
+In summary, The second model (Randomly Oversampled) performs slightly better in terms of correctly identifying high-risk loans, while both models excel in identifying healthy loans. The selection of the model should align with the problem requirements and priorities.
